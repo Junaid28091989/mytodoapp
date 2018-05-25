@@ -5,6 +5,7 @@ import classnames from 'classnames'
 const Link = ({ active, children, setFilter }) =>
   (
     <a
+      href={'#/'+ children}
       className={classnames({ selected: active })}
       style={{ cursor: 'pointer' }}
       onClick={() => setFilter()}

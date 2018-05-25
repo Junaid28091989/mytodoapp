@@ -20,6 +20,7 @@ const SubHeader = (props) => {
   return (
     <section className="section" style={sectionstyle}>
       <ul className="filters">
+
         {Object.keys(FILTER_TITLES).map(filter =>
           <li key={filter}>
             <FilterLink filter={filter}>
